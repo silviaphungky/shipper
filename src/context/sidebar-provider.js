@@ -1,4 +1,13 @@
 import React, { createContext, useContext, useState } from 'react'
+import PropTypes from 'prop-types'
+
+const propTypes = {
+  children: PropTypes.element
+}
+
+const defaultProps = {
+  children: <></>
+}
 
 const SidebarContext = createContext()
 
@@ -24,3 +33,7 @@ export const useSidebar = () => {
   }
   return context
 }
+
+
+SidebarContext.propTypes = propTypes
+SidebarContext.defaultProps = defaultProps
