@@ -2,7 +2,6 @@ import React, { Suspense, useCallback, useEffect, useState } from 'react'
 import { Spinner } from 'reactstrap'
 import { Pagination } from '../components/molecules'
 import { DriverManagementForm, Layout, UserCardList } from '../components/organisms'
-import { useNetwork } from '../context/sidebar-provider'
 import RandomUserApi from '../service/random-user-api'
 
 const DriverManagementPage = () => {
