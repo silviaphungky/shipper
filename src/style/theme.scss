@@ -1,0 +1,12 @@
+$primary: red;
+$secondary: rgb(120, 120, 120);
+$light: #fff;
+
+// Component Custom CSS
+@import '../pages/driver-management';
+@import '../components/organisms/user-card-list/user-card-list';
+@import '../components/organisms/driver-management-form/driver-management-form';
+@import '../components/molecules/pagination/pagination';
+@import '../components/molecules/navbar/navbar.scss';
+@import '../components/molecules/sidebar/sidebar.scss';
+@import '~bootstrap/scss/bootstrap.scss';

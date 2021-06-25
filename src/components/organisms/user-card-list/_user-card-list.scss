@@ -1,0 +1,66 @@
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.user-list__wrapper {
+  overflow: auto;
+  width: 100%;
+  display: flex;
+}
+
+.user__card {
+  flex: 0 0 27%;
+  margin: 1rem;
+}
+
+.card-text {
+  > p {
+    margin: 0;
+  }
+}
+
+.user__card:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+.user__card:nth-child(5) {
+  margin-right: 0 !important;
+}
+
+.user__card-body {
+  display: block;
+}
+
+@media only screen and (max-width:768px) {
+  .user-list__wrapper {
+    display: block;
+  }
+
+  .user__card {
+    margin: 1.5rem 0 !important;
+  }
+
+  .user__card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    > i {
+      font-size: 5.5em;
+    }
+  }
+
+  .user-detail__text > p:nth-child(3) {
+    display: none;
+  }
+
+  .user-detail__text > p:nth-child(4) {
+    display: none;
+  }
+  
+}
+
+.nowrap {
+  white-space: nowrap;  
+}

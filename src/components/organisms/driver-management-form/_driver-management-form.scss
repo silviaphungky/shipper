@@ -1,0 +1,44 @@
+.search-driver__wrapper {
+  display: flex;
+}
+
+.search-driver__card {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-driver__field {
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+@media only screen and (max-width:768px) {
+  .search-driver__wrapper {
+    display: block;
+
+     h3 {
+      font-size: 1rem;
+    }
+  }
+
+  .search-driver__card {
+    margin: 0;
+  }
+
+  .search-driver__field {
+    display: block;
+
+    > input {
+        margin: 1rem 0 !important;
+    }
+
+    > button {
+      width: 100%;
+    }
+  }
+  
+}

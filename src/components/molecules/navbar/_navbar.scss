@@ -1,0 +1,33 @@
+.navbar {
+  z-index: 1000;
+
+  > div {
+    display: none;
+  }
+}
+
+.navbar__text {
+  display: block;
+}
+
+@media only screen and (max-width:768px) {
+
+  .navbar {
+    > div {
+      display: block;
+    }
+
+    > i {
+      display: block;
+    }
+  }
+
+  .navbar__text {
+    display: none;
+  }
+
+  .mobile-menu__wrapper {
+    height: 100vh;
+    display: block;
+  }
+}

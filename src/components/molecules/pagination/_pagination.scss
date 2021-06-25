@@ -1,0 +1,15 @@
+.pagination {
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  color: $secondary;
+  background: none !important;
+  border: none !important;
+  outline: none;
+  white-space: nowrap;
+  margin: 0;
+
+  > i {
+    padding: 0.25rem;
+  }
+}

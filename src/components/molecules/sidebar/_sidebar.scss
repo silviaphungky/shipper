@@ -1,0 +1,51 @@
+.sidebar__menu {
+  display: block;
+  list-style: none;
+  background-color: $light;
+  margin-bottom: 0;
+  padding: 1rem 1rem 1rem 0;
+  height: 100%;
+  position: fixed;
+
+  > a {
+    color: #000 !important;
+    text-decoration: none !important;
+
+    > li {
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  
+      > i {
+        margin: 0 0.75rem;
+      }
+    }
+  
+    > li.active {
+      border-left: 4px solid $primary;
+    }
+  }
+}
+
+.hide {
+  display: block;
+}
+
+@media only screen and (max-width:768px) {
+  .sidebar__menu {
+    display: block;
+    height: 100%;
+    z-index: 1000;
+    width: 100vw;
+  }
+
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
+  }
+}
+

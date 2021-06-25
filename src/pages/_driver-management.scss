@@ -1,0 +1,23 @@
+.content__wrapper {
+  padding: 2rem 0 3rem 2rem;
+  background-color: rgba(211,211,211, 0.2);
+  flex: 1 1 0%;
+  overflow: auto;
+  margin-left: 14.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+@media only screen and (max-width:768px) {
+  .content__wrapper {
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;  
+}
