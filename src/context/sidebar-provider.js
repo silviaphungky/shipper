@@ -35,5 +35,5 @@ export const useSidebar = () => {
 }
 
 
-SidebarContext.propTypes = propTypes
-SidebarContext.defaultProps = defaultProps
+SidebarProvider.propTypes = propTypes
+SidebarProvider.defaultProps = defaultProps
