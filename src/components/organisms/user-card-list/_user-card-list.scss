@@ -43,10 +43,10 @@
 
   .user__card-body {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     
     > i {
+      flex: 0 0 40%;
       font-size: 5.5em;
     }
   }
